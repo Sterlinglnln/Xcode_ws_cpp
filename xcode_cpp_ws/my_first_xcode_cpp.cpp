@@ -9,22 +9,22 @@
 
 using namespace std;
 
-class myFirstXcodeCpp {
-private:
-    string name;
-
+class MyFirstXcodeCpp {
 public:
-    myFirstXcodeCpp(string n) : name(n) {
-        cout << "Hello, " << name << "!" << endl;
+    void greet() {
+        cout << "Hello, Larry!" << endl;
     }
 };
 
 int main() {
-    string message;
-    cout << "Message from sterlinglnln: ";
-    getline(cin, message);
+    MyFirstXcodeCpp greeter;
     
-    myFirstXcodeCpp name1("Larry");
+    string greeting;
+    cout << "Message from larry: ";
+    getline(cin, greeting);
+    
+    cout << "Message received: ";
+    greeter.greet();
     
     return 0;
 }
